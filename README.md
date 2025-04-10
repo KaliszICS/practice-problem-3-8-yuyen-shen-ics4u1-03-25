@@ -1,6 +1,6 @@
 # Instructions  
 
-1. Write a function to calculate the nth Fibonacci number (where F(0) = 0, F(1) = 1, and F(n) = F(n-1) + F(n-2) for n > 1). Your implementation should use memoization to avoid redundant calculations.
+1. Write a function called _fib_(int num) to calculate the nth Fibonacci number (where F(0) = 0, F(1) = 1, and F(n) = F(n-1) + F(n-2) for n > 1). Your implementation should use memoization to avoid redundant calculations.
 
 2. You are given an array representing the cost of climbing each step of a staircase. Once you pay the cost, you can either climb one or two steps.
 You can either start from the step with index 0, or the step with index 1.
