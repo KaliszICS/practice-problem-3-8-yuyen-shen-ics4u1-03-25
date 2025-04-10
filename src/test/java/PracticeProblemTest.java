@@ -1,7 +1,10 @@
 import java.lang.reflect.Method;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.*;
+
+
 public class PracticeProblemTest {
+
 @Test
 @DisplayName("")
 void fibonacciTest1() {
@@ -99,7 +102,7 @@ void fibonacciTest5() {
 }
 @Test
 @DisplayName("")
-void fibonacciTest5() {
+void fibonacciTest6() {
     Class<?> testClass = PracticeProblem.class;
     try {
         Class<?>[] cArg = {int.class};
@@ -121,10 +124,10 @@ void fibonacciTest5() {
 void minCostClimbingStairsTest1() {
     Class<?> testClass = PracticeProblem.class;
     try {
-        Class<?>[] cArg = {it[].class};
+        Class<?>[] cArg = {int[].class};
         Method method = testClass.getDeclaredMethod("minCostClimbingStairs", cArg);
   // Enter code here
-  it[] cost = {};
+  int[] cost = {};
     assertEquals(0, (int)method.invoke(null, cost));
 }
 
@@ -141,10 +144,10 @@ void minCostClimbingStairsTest1() {
 void minCostClimbingStairsTest2() {
     Class<?> testClass = PracticeProblem.class;
     try {
-        Class<?>[] cArg = {it[].class};
+        Class<?>[] cArg = {int[].class};
         Method method = testClass.getDeclaredMethod("minCostClimbingStairs", cArg);
   // Enter code here
-  it[] cost = {5};
+  int[] cost = {5};
     assertEquals(5, (int)method.invoke(null, cost));
 }
 
@@ -161,10 +164,10 @@ void minCostClimbingStairsTest2() {
 void minCostClimbingStairsTest3() {
     Class<?> testClass = PracticeProblem.class;
     try {
-        Class<?>[] cArg = {it[].class};
+        Class<?>[] cArg = {int[].class};
         Method method = testClass.getDeclaredMethod("minCostClimbingStairs", cArg);
   // Enter code here
-  it[] cost = {10, 15};
+  int[] cost = {10, 15};
     assertEquals(10, (int)method.invoke(null, cost));
 }
 
@@ -181,10 +184,10 @@ void minCostClimbingStairsTest3() {
 void minCostClimbingStairsTest4() {
     Class<?> testClass = PracticeProblem.class;
     try {
-        Class<?>[] cArg = {it[].class};
+        Class<?>[] cArg = {int[].class};
         Method method = testClass.getDeclaredMethod("minCostClimbingStairs", cArg);
   // Enter code here
-  it[] cost = {1, 100, 1, 1, 1, 100, 1, 1, 100, 1};
+  int[] cost = {1, 100, 1, 1, 1, 100, 1, 1, 100, 1};
     assertEquals(6, (int)method.invoke(null, cost));
 }
 
@@ -196,15 +199,16 @@ void minCostClimbingStairsTest4() {
         fail("Something weird happened");
 }
 }
+
 @Test
 @DisplayName("")
-void minCostClimbingStairsTest5 {
+void minCostClimbingStairsTest5() {
     Class<?> testClass = PracticeProblem.class;
     try {
-        Class<?>[] cArg = {it[].class};
+        Class<?>[] cArg = {int[].class};
         Method method = testClass.getDeclaredMethod("minCostClimbingStairs", cArg);
   // Enter code here
-  it[] cost = {10, 10, 10, 10, 10};
+  int[] cost = {10, 10, 10, 10, 10};
     assertEquals(30, (int)method.invoke(null, cost));
 }
 
@@ -218,13 +222,13 @@ void minCostClimbingStairsTest5 {
 }
 @Test
 @DisplayName("")
-void minCostClimbingStairsTest6 {
+void minCostClimbingStairsTest6() {
     Class<?> testClass = PracticeProblem.class;
     try {
-        Class<?>[] cArg = {it[].class};
+        Class<?>[] cArg = {int[].class};
         Method method = testClass.getDeclaredMethod("minCostClimbingStairs", cArg);
   // Enter code here
-  it[] cost = {20, 5, 20, 5, 20};
+  int[] cost = {20, 5, 20, 5, 20};
     assertEquals(10, (int)method.invoke(null, cost));
 }
 
@@ -238,13 +242,13 @@ void minCostClimbingStairsTest6 {
 }
 @Test
 @DisplayName("")
-void minCostClimbingStairsTest7 {
+void minCostClimbingStairsTest7() {
     Class<?> testClass = PracticeProblem.class;
     try {
-        Class<?>[] cArg = {it[].class};
+        Class<?>[] cArg = {int[].class};
         Method method = testClass.getDeclaredMethod("minCostClimbingStairs", cArg);
   // Enter code here
-  it[] cost = {1, 5, 10, 15, 20};
+  int[] cost = {1, 5, 10, 15, 20};
     assertEquals(20, (int)method.invoke(null, cost));
 }
 
@@ -258,13 +262,13 @@ void minCostClimbingStairsTest7 {
 }
 @Test
 @DisplayName("")
-void minCostClimbingStairsTest8 {
+void minCostClimbingStairsTest8() {
     Class<?> testClass = PracticeProblem.class;
     try {
-        Class<?>[] cArg = {it[].class};
+        Class<?>[] cArg = {int[].class};
         Method method = testClass.getDeclaredMethod("minCostClimbingStairs", cArg);
   // Enter code here
-  it[] cost = {20, 15, 10, 5, 1};
+  int[] cost = {20, 15, 10, 5, 1};
     assertEquals(20, (int)method.invoke(null, cost));
 }
 
@@ -278,13 +282,13 @@ void minCostClimbingStairsTest8 {
 }
 @Test
 @DisplayName("")
-void minCostClimbingStairsTest9 {
+void minCostClimbingStairsTest9() {
     Class<?> testClass = PracticeProblem.class;
     try {
-        Class<?>[] cArg = {it[].class};
+        Class<?>[] cArg = {int[].class};
         Method method = testClass.getDeclaredMethod("minCostClimbingStairs", cArg);
   // Enter code here
-  it[] cost = {0, 0, 0, 0};
+  int[] cost = {0, 0, 0, 0};
     assertEquals(0, (int)method.invoke(null, cost));
 }
 

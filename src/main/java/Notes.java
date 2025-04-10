@@ -1,3 +1,4 @@
+import java.util.*;
 
 class Notes {
 	public static void main(String[] args) {
@@ -9,50 +10,21 @@ class Notes {
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 
 		return fibHelper(num, map);
-		
 	}
 
 	public static int fibHelper(int num, HashMap<Integer, Integer> map) {
 
-		// System.out.print(num);
-		
 		//base cases
-		if (num == 0) {
-			return 0;
-		}
 
-		if (num == 1) {
-			return 1;
-		}
+		//check the map
 
-		if (map.containsKey(num)) {
-			return map.get(num);
-		}
+		//recursive call
 
-		int result = fibHelper(num - 1, map) + fibHelper(num - 2, map);
+		//add to map
 
-		map.put(num, result); //add our result to the map
-		return result;
-		
+		//return
+		return 0;
 	}
-
-	public static int fib2(int num) {
-
-		// System.out.print(num);
-		
-		//base cases
-		if (num == 0) {
-			return 0;
-		}
-
-		if (num == 1) {
-			return 1;
-		}
-
-	
-		return fib(num - 1) + fib(num - 2);
-
-	}	
 
 	public static int dfsStack(String[][] arr) {
 
@@ -122,4 +94,5 @@ class Notes {
 		}
 		return smallest;
 	}
+
 }
