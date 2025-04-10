@@ -4,6 +4,56 @@ class Notes {
 
 	}
 
+	public static int fib(int num) {
+
+		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+
+		return fibHelper(num, map);
+		
+	}
+
+	public static int fibHelper(int num, HashMap<Integer, Integer> map) {
+
+		// System.out.print(num);
+		
+		//base cases
+		if (num == 0) {
+			return 0;
+		}
+
+		if (num == 1) {
+			return 1;
+		}
+
+		if (map.containsKey(num)) {
+			return map.get(num);
+		}
+
+		int result = fibHelper(num - 1, map) + fibHelper(num - 2, map);
+
+		map.put(num, result); //add our result to the map
+		return result;
+		
+	}
+
+	public static int fib2(int num) {
+
+		// System.out.print(num);
+		
+		//base cases
+		if (num == 0) {
+			return 0;
+		}
+
+		if (num == 1) {
+			return 1;
+		}
+
+	
+		return fib(num - 1) + fib(num - 2);
+
+	}	
+
 	public static int dfsStack(String[][] arr) {
 
 		Stack<int[]> stack = new Stack<int[]>();
