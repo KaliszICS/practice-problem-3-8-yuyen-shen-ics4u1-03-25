@@ -209,7 +209,7 @@ void minCostClimbingStairsTest5() {
         Method method = testClass.getDeclaredMethod("minCostClimbingStairs", cArg);
   // Enter code here
   int[] cost = {10, 10, 10, 10, 10};
-    assertEquals(30, (int)method.invoke(null, cost));
+    assertEquals(20, (int)method.invoke(null, cost));
 }
 
 
