@@ -38,6 +38,9 @@ public class PracticeProblem {
 	public static int minCostClimbingStairs(int[] cost) {
 		HashMap<Integer, Integer> memo = new HashMap<Integer, Integer>(); 
 		int n = cost.length;
+		if (n == 1) {
+			return cost[0];
+		}
 		return Math.min(minCost(n - 1, cost, memo), minCost(n - 2, cost, memo));
 	}	
 
